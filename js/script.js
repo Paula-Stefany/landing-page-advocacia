@@ -16,3 +16,23 @@ bars.addEventListener("click", toogleMenu);
 navItems.forEach((item) => {
     item.addEventListener("click", toogleMenu);
 })
+
+/* SERVIÇE CARDS */
+
+const card = document.getElementById("service-cards")
+const scroolLeft = document.getElementById("left")
+const scroolRight = document.getElementById("right")
+
+scroolLeft.addEventListener("click", () => {
+    card.scrollBy({
+        left: -270,
+        behavior: "smooth",
+    })
+})
+scroolRight.addEventListener("click", () => {
+    card.scrollBy({
+        left: 270,
+        behavior: "smooth",
+    })
+})
+
