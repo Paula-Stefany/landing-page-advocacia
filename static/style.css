@@ -3,8 +3,8 @@
     --font-body: "Roboto", sans-serif;
     --font-card: "Hind", sans-serif;
     --font-size-small: 1.1rem; /* CARD */
-    --font-size-small-medium: 1.3rem; /* NORMAL */
-    --font-size-medium: 1.8rem; /* SUBTITLE */
+    --font-size-small-medium: 1.2rem; /* NORMAL */
+    --font-size-medium: 1.7rem; /* SUBTITLE */
     --font-size-large: 2.8rem; /* LARGE */
     --font-size-xlarge: 3.5rem; /* TITLE */
     --orange: #f7ab30;
@@ -186,7 +186,8 @@ body{
 /* SERVIÇES */
 
 .services{
-    padding: 7rem 0rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
 }
 
 .services-title,
@@ -292,3 +293,87 @@ body{
     color: var(--orange);
 }
 
+
+/* who am i */
+
+.who-am-i{
+    padding: 4em 0rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.who-am-i-title{
+    width: fit-content;
+    margin: auto;
+    font-family: var(--font-header);
+    font-size: var(--font-size-medium);
+    color: var(--orange)
+}
+
+.who-am-i-content{
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.who-am-i-image{
+    width: 100%;
+}
+
+.who-am-i-img{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.who-am-i-subtitle{
+    font-family: var(--font-header);
+    font-size: var(--font-size-small-medium);
+    width: fit-content;
+    margin-bottom: 1.8rem;
+    color: var(--black);
+}
+
+.who-am-i-sub-subtitle{
+    font-family: var(--font-body);
+    font-size: var(--font-size-small-medium);
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+}
+
+.who-am-i-description{
+    font-family: var(--font-body);
+    font-size: var(--font-size-small-medium);
+    margin-bottom: 2rem;
+    color: var(--gray);
+    text-align: justify;
+}
+
+.who-am-i-details{
+    display: flex;
+    gap: 0.3rem;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+}
+
+.fulano-details{
+    width: 100px;
+    padding: 0.8rem 0.5rem;
+    background-color: var(--white);
+    text-align: center;
+    box-shadow: 2px 2px 4px var(--shadow);
+}
+
+.details-title{
+    font-family: var(--font-card);
+    font-size: var(--font-size-small-medium);
+    color: var(--orange);
+}
+
+.details-description{
+    font-family: var(--font-card);
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    color: var(--orange);
+}
