@@ -6,7 +6,6 @@
     --font-size-small-medium: 1.2rem; /* NORMAL */
     --font-size-medium: 1.7rem; /* SUBTITLE */
     --font-size-large: 2.8rem; /* LARGE */
-    --font-size-xlarge: 3.5rem; /* TITLE */
     --orange: #f7ab30;
     --gray: #747474;
     --light-yellow: #f9f6a5;
@@ -186,8 +185,7 @@ body{
 /* SERVIÇES */
 
 .services{
-    padding-top: 5rem;
-    padding-bottom: 4rem;
+    padding-top: 7rem;
 }
 
 .services-title,
@@ -297,9 +295,10 @@ body{
 /* who am i */
 
 .who-am-i{
-    padding: 4em 0rem;
+    padding-top: 7rem;
     display: flex;
     flex-direction: column;
+    background: var(--white);
 }
 
 .who-am-i-title{
@@ -330,16 +329,49 @@ body{
 .who-am-i-subtitle{
     font-family: var(--font-header);
     font-size: var(--font-size-small-medium);
-    width: fit-content;
-    margin-bottom: 1.8rem;
     color: var(--black);
 }
+
+.who-am-i-container-sub-subtitle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.check-container{
+    padding: 0.8rem;
+    border-radius: 100%;
+    background: var(--orange);
+    margin-right: 1rem;
+}
+
+.check-container i{
+    font-size: 1.5rem;
+    color: var(--light-yellow);
+}
+
+.who-am-i-container-subtitle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.7rem;
+}
+
+.who-am-i-container-subtitle i{
+    font-size: 2.2rem;
+    color: var(--orange);
+    margin-right: 1rem;
+}
+
 
 .who-am-i-sub-subtitle{
     font-family: var(--font-body);
     font-size: var(--font-size-small-medium);
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.5rem;
     font-weight: 500;
+}
+
+.who-am-i-sub-subtitle strong{
+    color: var(--orange);
 }
 
 .who-am-i-description{
