@@ -387,8 +387,7 @@ body{
 .who-am-i-details{
     display: flex;
     gap: 0.3rem;
-    margin-bottom: 4rem;
-    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .fulano-details{
@@ -410,6 +409,13 @@ body{
     font-size: var(--font-size-small);
     font-weight: 500;
     color: var(--orange);
+}
+
+.who-am-i-contact{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 2rem;
+    width: fit-content;
 }
 
 /* DEPOIMENTS */
@@ -514,4 +520,73 @@ body{
 
 .depoiment-stars .last-star{
     color: var(--gray);
+}
+
+/* FREQUENT QUESTIONS */
+
+.frequent-questions{
+    padding: 7rem 0rem;
+}
+
+.questions-title{
+    width: fit-content;
+    margin: auto;
+    color: var(--orange);
+    font-family: var(--font-header);
+    font-size: var(--font-size-medium);
+    margin-bottom: 1rem;
+}
+
+.questions-title-description{
+    font-family: var(--font-body);
+    font-size: var(--font-size-small-medium);
+    color: var(--gray);
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.questions-content{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.question{
+    box-shadow: 2px 3px 4px var(--shadow);
+    border-left: 8px solid var(--orange);
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+}
+
+.question-description{
+    font-family: var(--font-card);
+    font-size: var(--font-size-small-medium);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.question-description i{
+    transition: transform 0.1s ease;
+    color: var(--orange);
+    font-size: 1.6rem;
+}
+
+details[open] .question-description i{
+    transform: rotate(-90deg);
+}
+
+.question-response-description{
+    font-family: var(--font-card);
+    font-size: var(--font-size-small);
+    color: var(--gray);
+    margin-top: 1rem;
 }
