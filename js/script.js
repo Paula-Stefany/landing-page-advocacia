@@ -3,9 +3,23 @@ const bars = document.getElementById("bars")
 const navItems = document.querySelectorAll("#header-nav a")
 
 
-function toogleMenu(){
-    bars.classList.toggle("active")
+function toogleMenu(event){
+
+    bars.classList.toggle("active");
     nav.classList.toggle("active");
+   
+
+    const active = nav.classList.contains("active");
+
+    /* condição ? valor_se_true : valor_se_false;
+    */
+    event.currentTarget.setAttribute("aria-expanded", active ? "true" : "false");
+
+    if(active){
+        event.currentTarget.setAttribute("aria-label", "Fechar menu");
+    } else {
+        event.currentTarget.setAttribute("aria-label", "Abrir menu");
+    }
 }
 
 /* Adicionando um ouvinte de Evento de click no bars */

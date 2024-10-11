@@ -26,7 +26,7 @@
 
         <!-- HEADER NAV -->
         <nav class="header-nav" id="header-nav">
-            <ul class="nav-items">
+            <ul class="nav-items" role="menu">
                 <li><a href="#banner" class="nav-item">Home</a></li>
                 <li><a href="#services" class="nav-item">Serviçes</a></li>
                 <li><a href="#who-am-i" class="nav-item">Who am I?</a></li>
@@ -37,11 +37,11 @@
         </nav>
 
         <!-- HEADER MENU MOBILE -->
-        <div class="bars" id="bars">
+        <button class="bars" id="bars" aria-expanded="false" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </div>
+        </button>
 
     </header>
 
@@ -201,10 +201,12 @@
             <div class="depoiments-cards" id="depoiments-cards">
 
                 <article class="depoiment-card">
-                    <figure class="depoiment-image">
-                        <img src="img/pexels-enginakyurt-1435517.webp" alt="Profile Image" class="depoiment-img">
-                    </figure>
-                    <h2 class="depoiment-title-profile">Toby</h2>
+                    <div class="profile-content">
+                        <figure class="depoiment-image">
+                            <img src="img/pexels-enginakyurt-1435517.webp" alt="Profile Image" class="depoiment-img">
+                        </figure>
+                        <h2 class="depoiment-title-profile">Toby</h2>
+                    </div>
                     <p class="depoiment-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sit, libero porro temporibus nulla totam numquam eius veniam alias velit exercitationem nihil!
                     </p>
@@ -217,10 +219,12 @@
                     </span>
                 </article>
                 <article class="depoiment-card">
-                    <figure class="depoiment-image">
-                        <img src="img/pexels-enginakyurt-1435517.webp" alt="Profile Image" width="25px;" class="depoiment-img">
-                    </figure>
-                    <h2 class="depoiment-title-profile">Tonico</h2>
+                    <div class="profile-content">
+                        <figure class="depoiment-image">
+                            <img src="img/pexels-enginakyurt-1435517.webp" alt="Profile Image" class="depoiment-img">
+                        </figure>
+                        <h2 class="depoiment-title-profile">Toby</h2>
+                    </div>
                     <p class="depoiment-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sit, libero porro temporibus nulla totam numquam eius veniam alias velit exercitationem nihil!
                     </p>
@@ -233,10 +237,12 @@
                     </span>
                 </article>
                 <article class="depoiment-card">
-                    <figure class="depoiment-image">
-                        <img src="img/pexels-enginakyurt-1435517.webp" alt="Profile Image" width="25px;" class="depoiment-img">
-                    </figure>
-                    <h2 class="depoiment-title-profile">Fred</h2>
+                    <div class="profile-content">
+                        <figure class="depoiment-image">
+                            <img src="img/pexels-enginakyurt-1435517.webp" alt="Profile Image" class="depoiment-img">
+                        </figure>
+                        <h2 class="depoiment-title-profile">Toby</h2>
+                    </div>
                     <p class="depoiment-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sit, libero porro temporibus nulla totam numquam eius veniam alias velit exercitationem nihil!
                     </p>
@@ -249,10 +255,12 @@
                     </span>
                 </article>
                 <article class="depoiment-card">
-                    <figure class="depoiment-image">
-                        <img src="img/pexels-enginakyurt-1435517.webp" alt="Profile Image" width="25px;" class="depoiment-img">
-                    </figure>
-                    <h2 class="depoiment-title-profile">Bartolomeu</h2>
+                    <div class="profile-content">
+                        <figure class="depoiment-image">
+                            <img src="img/pexels-enginakyurt-1435517.webp" alt="Profile Image" class="depoiment-img">
+                        </figure>
+                        <h2 class="depoiment-title-profile">Toby</h2>
+                    </div>
                     <p class="depoiment-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sit, libero porro temporibus nulla totam numquam eius veniam alias velit exercitationem nihil!
                     </p>
@@ -264,6 +272,7 @@
                         <i class="fa-solid fa-star last-star"></i>
                     </span>
                 </article>
+                
             </div>
         </section>
 
@@ -332,21 +341,22 @@
 
             <!-- CONTACT CONTENT -->
             <div class="contact-content">
+                
                 <form action="" class="contact-form">
-                    <input class="input" type="text">
-                    <input class="input" type="email">
-                    <textarea class="text-area" name="" id="text-area"></textarea>
+                    <input class="input" type="text" placeholder="Digite seu nome">
+                    <input class="input" type="email" placeholder="Digite seu email">
+                    <textarea class="text-area" name="" id="text-area" placeholder="Digite o assunto"></textarea>
                     <button class="send-button">
                         <i class="fa-regular fa-paper-plane"></i>
                         Enviar
                     </button>
                 </form>
+                <!-- CONTACT IMAGE -->
+                <aside class="contact-image">
+                    <img src="img/undraw_sentiment_analysis_jp6w (1).svg" alt="Smartphone Image" class="contact-img">
+                </aside>
             </div>
 
-            <!-- CONTACT IMAGE -->
-            <aside class="contact-image">
-                <img src="img/undraw_smartphone_34c3.svg" alt="Smartphone Image" width="25px" class="contact-img">
-            </aside>
         </section>
 
         <!-- FOOTER -->
