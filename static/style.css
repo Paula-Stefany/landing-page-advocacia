@@ -659,9 +659,12 @@ details[open] .question-description i{
     font-family: var(--font-body);
 }
 
-.contact-image{
+.contact-image, 
+.contact-img{
     display: none;
 }
+
+
 
 .footer{
     padding-top: 5rem;
@@ -1011,6 +1014,7 @@ details[open] .question-description i{
     }
 
     .contact-img{
+        display: block;
         width: 200px;
         margin: auto;
     }

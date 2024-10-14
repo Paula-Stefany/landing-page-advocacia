@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advogado Fulano is a a lawyer who provides legal services">
+    <meta name="keywords" content="serviçes, who am i, ">
+    <meta name="robots" content="index, follow"></meta>
     <title>Advogado Fulano</title>
     <meta name="author" content="Paula Stéfany">
+    <link rel="icon" href="img/undraw_text_files_au1q.svg">
     <link rel="stylesheet" href="static/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +23,7 @@
         <!-- HEADER LOGO -->
         <div class="header-logo">
             <a href="#banner">
-                <img src="img/undraw_text_files_au1q.svg" width="30px" height="30px" class="logo-img">
+                <img src="img/undraw_text_files_au1q.svg" alt="logo" class="logo-img" >
                 <span>Fulano</span>
             </a>
         </div>
@@ -27,12 +31,12 @@
         <!-- HEADER NAV -->
         <nav class="header-nav" id="header-nav">
             <ul class="nav-items" role="menu">
-                <li><a href="#banner" class="nav-item">Home</a></li>
-                <li><a href="#services" class="nav-item">Serviçes</a></li>
-                <li><a href="#who-am-i" class="nav-item">Who am I?</a></li>
-                <li><a href="#depoiments" class="nav-item">Depoiments</a></li>
-                <li><a href="#frequent-questions" class="nav-item">Frequent Questions</a></li>
-                <li><a href="#contact" class="nav-item">Contact</a></li>
+                <li role="menuitem"><a href="#banner" class="nav-item">Home</a></li>
+                <li role="menuitem"><a href="#services" class="nav-item">Serviçes</a></li>
+                <li role="menuitem"><a href="#who-am-i" class="nav-item">Who am I?</a></li>
+                <li role="menuitem"><a href="#depoiments" class="nav-item">Depoiments</a></li>
+                <li role="menuitem"><a href="#frequent-questions" class="nav-item">Frequent Questions</a></li>
+                <li role="menuitem"><a href="#contact" class="nav-item">Contact</a></li>
             </ul>
         </nav>
 
@@ -48,7 +52,7 @@
     <main>
 
         <!-- BANNER SECTION -->
-        <section class="banner" id="banner">
+        <section class="banner" id="banner" aria-label="Banner com imagem de livro e caneta">
 
             <!-- BANNER-TEXT -->
             <article class="banner-text">
@@ -111,8 +115,8 @@
 
             <!-- SERVICES ARROWS -->
             <figure class="arrow">
-                <button id="left" class="btn-arrow"><i class="fa-solid fa-chevron-left bx"></i></button>
-                <button id="right" class="btn-arrow"><i class="fa-solid fa-chevron-right bx"></i></button>
+                <button id="left" class="btn-arrow"><i class="fa-solid fa-chevron-left bx" aria-label="Navegar para o serviçe anterior"></i></button>
+                <button id="right" class="btn-arrow"><i class="fa-solid fa-chevron-right bx" aria-label="Navegar para o serviçe posterior"></i></button>
             </figure>
         </section>
 
@@ -181,7 +185,7 @@
 
                     <!-- CONTACT BUTTON -->
                     <div class="who-am-i-contact">
-                        <a class="contact-button" href="#">
+                        <a class="contact-button" href="#" aria-label="contact button">
                             <i class="fa-solid fa-mobile-screen"></i>
                             Talk to me
                         </a>
@@ -346,7 +350,7 @@
                     <input class="input" type="text" placeholder="Digite seu nome">
                     <input class="input" type="email" placeholder="Digite seu email">
                     <textarea class="text-area" name="" id="text-area" placeholder="Digite o assunto"></textarea>
-                    <button class="send-button">
+                    <button type="submit" aria-label="Envio de formulário" class="send-button">
                         <i class="fa-regular fa-paper-plane"></i>
                         Enviar
                     </button>
