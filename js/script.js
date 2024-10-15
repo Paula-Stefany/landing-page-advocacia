@@ -47,3 +47,42 @@ scroolRight.addEventListener("click", () => {
         behavior: "smooth",
     })
 })
+
+
+// Função de carregamento preguiçoso das imagens //
+const lazyLoading = () => {
+
+    var lazyImages = document.querySelectorAll(".lazy-load")
+
+    lazyImages.forEach((img) => {
+
+        // Verifica se o topo da imagem está dentro da janela visível do navegador //
+        if(img.getBoundingClientRect().top < window.innerHeight && img.getAttribute("data-src")) { 
+
+            // Atribui a fonte da img data-src ao atributo src // 
+            img.src = img.getAttribute("data-src");
+            img.removeAttribute("data-src");
+            img.classList.add("loading");
+        }
+
+    });
+
+    var banner = document.querySelector(".banner[data-bg]");
+    if (banner && banner.getBoundingClientRect().top < window.innerHeight) {
+        banner.style.backgroundImage = `url(${banner.getAttribute("data-bg")})`;
+        banner.removeAttribute("data-bg")
+        banner.classList.add("loading")
+    }
+
+};
+
+
+// Função será executada quando todos os recursos da página forem carregados //
+window.onload = () => {
+    lazyLoading();
+};
+
+// Função será executada quando ocorrer o evento de rolagem da página //
+window.onscroll = () => {
+    lazyLoading();
+}

@@ -23,13 +23,13 @@
         <!-- HEADER LOGO -->
         <div class="header-logo">
             <a href="#banner">
-                <img src="img/undraw_text_files_au1q.svg" alt="logo" class="logo-img" >
+                <img aria-hidden="true" data-src="img/undraw_text_files_au1q.svg" alt="logo" class="logo-img lazy-load" >
                 <span>Fulano</span>
             </a>
         </div>
 
         <!-- HEADER NAV -->
-        <nav class="header-nav" id="header-nav">
+        <nav class="header-nav" id="header-nav" aria-label="menu de navegação">
             <ul class="nav-items" role="menu">
                 <li role="menuitem"><a href="#banner" class="nav-item">Home</a></li>
                 <li role="menuitem"><a href="#services" class="nav-item">Serviçes</a></li>
@@ -52,7 +52,7 @@
     <main>
 
         <!-- BANNER SECTION -->
-        <section class="banner" id="banner" aria-label="Banner com imagem de livro e caneta">
+        <section class="banner" data-bg="img/pexels-picjumbo-com-55570-210660.webp" id="banner" aria-label="Banner com imagem de livro e caneta">
 
             <!-- BANNER-TEXT -->
             <article class="banner-text">
@@ -127,7 +127,7 @@
 
                 <!-- WHO AM I - IMAGE -->
                 <aside class="who-am-i-image">
-                    <img class="who-am-i-img" src="img/pexels-elina-araja-1743227-3317936.webp" alt="Advogado Fulano Image"  width="20px">
+                    <img aria-hidden="true" class="who-am-i-img lazy-load" data-src="img/pexels-elina-araja-1743227-3317936.webp" alt="Advogado Fulano Image"  width="20px">
                 </aside>
 
                 <!-- WHO AM I - TEXT -->
@@ -207,7 +207,7 @@
                 <article class="depoiment-card">
                     <div class="profile-content">
                         <figure class="depoiment-image">
-                            <img src="img/pexels-enginakyurt-1435517.webp" alt="Profile Image" class="depoiment-img">
+                            <img aria-hidden="true" data-src="img/pexels-enginakyurt-1435517.webp" alt="Profile Image" class="depoiment-img lazy-load">
                         </figure>
                         <h2 class="depoiment-title-profile">Toby</h2>
                     </div>
@@ -225,7 +225,7 @@
                 <article class="depoiment-card">
                     <div class="profile-content">
                         <figure class="depoiment-image">
-                            <img src="img/pexels-enginakyurt-1435517.webp" alt="Profile Image" class="depoiment-img">
+                            <img aria-hidden="true" data-src="img/pexels-enginakyurt-1435517.webp" alt="Profile Image" class="depoiment-img lazy-load">
                         </figure>
                         <h2 class="depoiment-title-profile">Toby</h2>
                     </div>
@@ -243,7 +243,7 @@
                 <article class="depoiment-card">
                     <div class="profile-content">
                         <figure class="depoiment-image">
-                            <img src="img/pexels-enginakyurt-1435517.webp" alt="Profile Image" class="depoiment-img">
+                            <img aria-hidden="true" data-src="img/pexels-enginakyurt-1435517.webp" alt="Profile Image" class="depoiment-img lazy-load">
                         </figure>
                         <h2 class="depoiment-title-profile">Toby</h2>
                     </div>
@@ -261,7 +261,7 @@
                 <article class="depoiment-card">
                     <div class="profile-content">
                         <figure class="depoiment-image">
-                            <img src="img/pexels-enginakyurt-1435517.webp" alt="Profile Image" class="depoiment-img">
+                            <img aria-hidden="true" data-src="img/pexels-enginakyurt-1435517.webp" alt="Profile Image" class="depoiment-img lazy-load">
                         </figure>
                         <h2 class="depoiment-title-profile">Toby</h2>
                     </div>
@@ -276,7 +276,6 @@
                         <i class="fa-solid fa-star last-star"></i>
                     </span>
                 </article>
-                
             </div>
         </section>
 
@@ -341,23 +340,24 @@
         <section class="contact" id="contact">
 
             <!-- CONTACT TITLE -->
-            <h2 class="contact-title">Solicite um orçamento</h2>
+            <h2 class="contact-title">Request a Quote</h2>
 
             <!-- CONTACT CONTENT -->
             <div class="contact-content">
                 
                 <form action="" class="contact-form">
-                    <input class="input" type="text" placeholder="Digite seu nome">
-                    <input class="input" type="email" placeholder="Digite seu email">
-                    <textarea class="text-area" name="" id="text-area" placeholder="Digite o assunto"></textarea>
+                    <input class="input" type="text" placeholder="Name">
+                    <input class="input" type="email" placeholder="E-mail">
+                    <textarea class="text-area" name="" id="text-area" placeholder="Enter the subject
+                    "></textarea>
                     <button type="submit" aria-label="Envio de formulário" class="send-button">
                         <i class="fa-regular fa-paper-plane"></i>
-                        Enviar
+                        Send
                     </button>
                 </form>
                 <!-- CONTACT IMAGE -->
                 <aside class="contact-image">
-                    <img src="img/undraw_sentiment_analysis_jp6w (1).svg" alt="Smartphone Image" class="contact-img">
+                    <img aria-hidden="true" data-src="img/undraw_sentiment_analysis_jp6w (1).svg" alt="Smartphone Image" class="contact-img lazy-load">
                 </aside>
             </div>
 
@@ -370,7 +370,8 @@
             <section class="footer-content">
                 <div class="footer-items">
                     <article class="footer-item">
-                        <h3 class="footer-subtitle">Recursos</h3>
+                        <h3 class="footer-subtitle">Features
+                        </h3>
                         <ul>
                             <li class="footer-description">Lorem blá bláblá</li>
                             <li class="footer-description">Lorem blá bláblá</li>
@@ -378,7 +379,7 @@
                         </ul>
                     </article>
                     <article class="footer-item">
-                        <h3 class="footer-subtitle">Serviços</h3>
+                        <h3 class="footer-subtitle">Serviçes</h3>
                         <ul>
                             <li class="footer-description">Lorem blá bláblá</li>
                             <li class="footer-description">Lorem blá bláblá</li>
