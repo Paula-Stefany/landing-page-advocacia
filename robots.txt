@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://advogado-fulano.vercel.app/sitemap.xml

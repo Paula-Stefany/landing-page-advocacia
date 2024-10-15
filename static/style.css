@@ -122,6 +122,11 @@ html{
 .nav-items li a{
     text-decoration: none;
     color: var(--orange);
+    transition: 0.1s;
+}
+
+.nav-items li a:hover{
+    color: #d38404;
 }
 
 .nav-items li{
@@ -181,6 +186,11 @@ html{
     text-decoration: none;
     font-weight: 500;
     filter: drop-shadow(2px 1.6px 3px var(--shadow));
+    transition: 0.2s;
+}
+
+.contact-button:hover{
+    background-color: #f8f48e;
 }
 
 .contact-button i{
@@ -564,6 +574,7 @@ html{
     border-left: 8px solid var(--orange);
     border-radius: 0.5rem;
     padding: 0.6rem;
+    cursor: pointer;
 }
 
 .question-description{
